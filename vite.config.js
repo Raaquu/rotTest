@@ -1,5 +1,5 @@
 import { sveltekit } from '@sveltejs/kit/vite';
-import nodePolyfills from 'rollup-plugin-polyfill-node';
+//import nodePolyfills from 'rollup-plugin-polyfill-node';
 
 /**
  * I searched a million answers in the internet and borrowed pieces from everywhere, cant help finding all the sources anymore
@@ -31,7 +31,7 @@ const defineConfig ={
 	build: {
 	  target: "es2020",
 	  rollupOptions: {
-		plugins: [nodePolyfills({ crypto: true })],
+		//plugins: [nodePolyfills({ crypto: true })],
 	  },
 	}
   };
